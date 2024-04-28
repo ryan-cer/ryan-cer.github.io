@@ -23,30 +23,33 @@ let score_input = document.getElementById("score-input");
 // Sets the selection when clicked
 j_select.onclick = function() {
     if (selected_fam != null) {
-        document.getElementById(`${selected_fam}card`).classList.toggle('highlight');
+        document.getElementById(`${selected_fam}card`).classList.remove('highlight');
+        selected_fam = undefined;
     }
     selected_fam = "j-col-";
     selected_string_find(selected_fam);
     message.textContent = `You Selected ${selected_string}`;
-    document.getElementById(`${selected_fam}card`).classList.toggle('highlight');
+    document.getElementById(`${selected_fam}card`).classList.add('highlight');
 }
 q_select.onclick = function() {
     if (selected_fam != null) {
-        document.getElementById(`${selected_fam}card`).classList.toggle('highlight');
+        document.getElementById(`${selected_fam}card`).classList.remove('highlight');
+        selected_fam = undefined;
     }
     selected_fam = "q-col-";
     selected_string_find(selected_fam);
     message.textContent = `You Selected ${selected_string}`;
-    document.getElementById(`${selected_fam}card`).classList.toggle('highlight');
+    document.getElementById(`${selected_fam}card`).classList.add('highlight');
 }
 k_select.onclick = function() {
     if (selected_fam != null) {
-        document.getElementById(`${selected_fam}card`).classList.toggle('highlight');
+        document.getElementById(`${selected_fam}card`).classList.remove('highlight');
+        selected_fam = undefined;
     }
     selected_fam = "k-col-";
     selected_string_find(selected_fam);
     message.textContent = `You Selected ${selected_string}`;
-    document.getElementById(`${selected_fam}card`).classList.toggle('highlight');
+    document.getElementById(`${selected_fam}card`).classList.add('highlight');
 }
 
 // Finds the string name of selected character
