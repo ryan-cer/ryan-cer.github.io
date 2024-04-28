@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card War Score</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <!-- Player Name:<br>
+    <input type="text" placeholder="Player Name" id="player-name" autofocus> -->
+    <div id="score-main-cont">
+        <div id="score-main">
+            <div id="score-view-cont">
+                <div id="j-col-card"><a href="javascript:" id="jack-select"><h2>J</h2></a></div>
+                <div id="q-col-card"><a href="javascript:" id="queen-select"><h2>Q</h2></a></div>
+                <div id="k-col-card"><a href="javascript:" id="king-select"><h2>K</h2></a></div>
+                <div><h3 id="j-col-score">5</h3></div>
+                <div><h3 id="q-col-score">10</h3></div>
+                <div><h3 id="k-col-score">15</h3></div>
+                
+            </div>
+            <div id="message-cont">
+                <h3 id="message">Select a character to change score</h3>
+                <button id="test">Click Me</button>
+            </div>
+            <div id="score-control-cont">
+               <!--  <div id="special-buttons">
+                    <button id="shield">Add Shield</button>
+                    <button id="jack-protect">Protect King</button>
+                </div> -->
+                <div id="plus-minus-cont">
+                    <div id="minus-cont">
+                        <button id="minus-but">-</button>
+                    </div>
+                    <div id="plus-cont">
+                        <button id="plus-but">+</button>
+                    </div>
+                </div>
+                <div id="score-input-cont">
+                    Click the minus or plus buttons above to change it by 1 point or type a number below and then click the minus or plus button <br>
+                    <input type="number" id="score-input" min="0" >
+                </div>
+                
+            </div>
+        </div>
+        <div id="score-history">
+
+
+        </div>
+    </div>
+    <script src="card.js"></script>
+</body>
+</html>
