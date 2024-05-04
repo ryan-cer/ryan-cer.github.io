@@ -228,6 +228,10 @@ body {
         width: 100%;
 
     }
+    
+    #score-main {
+        grid-template-rows: repeat(3, .5fr);
+    }
 }
 
 
