@@ -18,7 +18,7 @@ body {
 #score-main-cont {
     background-color: var(--rc-bg-color);
     width: 70vw;
-    height: 98vh;
+    height: 93vh;
     display: grid;
     grid-template-columns: 3fr 1fr;
     margin: 0 auto;
