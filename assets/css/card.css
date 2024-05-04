@@ -70,6 +70,9 @@ body {
 #score-view-cont h2 {
     font-size: 5vh;
     text-decoration: none;
+    margin-top: 25%;
+    align-self: center;
+    justify-self: center;
 }
 
 .score-num-bg {
