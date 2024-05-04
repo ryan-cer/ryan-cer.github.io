@@ -1,5 +1,6 @@
 :root {
-    --rc-bg-color: #5a787b
+    --rc-bg-color: #5a787b;
+    --font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 #score-main-cont {
     background-color: var(--rc-bg-color);
     width: 70vw;
-    height: 90vh;
+    height: 98vh;
     display: grid;
     grid-template-columns: 3fr 1fr;
     margin: 0 auto;
@@ -35,12 +36,10 @@ body {
 }
 
 #score-view-cont > * {
-    background-color: var(--rc-bg-color);
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 #score-view-cont {
-    background-color: white !important;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 2fr 1fr;
@@ -48,14 +47,43 @@ body {
     text-align: center;
     
 }
+.score-bg {
+    background-color: var(--rc-bg-color);
+}
+
+.score-bg a {
+    text-decoration: none;
+    font-family: var(--font-family);
+}
+
+.score-bg a:link {
+    color:#9d2929
+}
+
+.score-bg h2:hover {
+    /* color:#9d9b29; */
+    animation-name: shake;
+    animation-duration: 1s;
+    /* animation-delay: .2s; */
+}
 
 #score-view-cont h2 {
     font-size: 5vh;
     text-decoration: none;
 }
 
+.score-num-bg {
+    background-color: #444;
+}
+
+.score-num {
+    color: rgb(216, 216, 216);
+    font-size: x-large;
+    font-family: var(--font-family);
+}
+
 #message-cont {
-    background-color: #bf9565;
+    background-color: #c4b3a0;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -64,7 +92,7 @@ body {
 
 #message {
     color: #9d2929;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-family);
     grid-column: 1 / 3 ;
     justify-self: center;
     align-self: end;
@@ -82,6 +110,7 @@ body {
     align-self: end;
     justify-self: end;
     padding-right: 15px;
+    font-family: var(--font-family);
 }
 
 #score-control-cont {
@@ -125,8 +154,19 @@ body {
 
 #special-buttons button {
     margin: 15%;
-    padding: 20px;
+    padding: 5px;
     
+}
+
+#score-input-cont {
+    padding: 15px;
+    font-size: small;
+    margin: 0 auto;
+    font-family: var(--font-family);
+}
+
+#button-instr {
+    margin: 0px;
 }
 
 #score-input {
@@ -150,11 +190,16 @@ body {
 }
 
 .highlight {
-    background-color: green !important;
+    background-color: rgb(56, 99, 56) !important;
+    color: #9d9b29 !important; 
+}
+
+.highlight a {
+    color: #9d9b29 !important;
 }
 
 .dead {
-    background-color: red !important;
+    background-color: rgb(59, 10, 10) !important;
 }
 
 #test {
@@ -181,3 +226,18 @@ body {
 
     }
 }
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
