@@ -42,7 +42,7 @@ body {
 #score-view-cont {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     /* height: 100%; */
     text-align: center;
     
@@ -68,11 +68,10 @@ body {
 }
 
 #score-view-cont h2 {
-    font-size: 5vh;
+    font-size: xx-large;
     text-decoration: none;
-    margin-top: 25%;
-    align-self: center;
-    justify-self: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .score-num-bg {
@@ -122,7 +121,7 @@ body {
     max-width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: .5fr 1fr;
     /* align-self: end; */
     text-align: center;
     gap: 5px;
