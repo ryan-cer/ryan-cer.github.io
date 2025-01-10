@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dungeon</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="cont">
+  <div id="control">
+    <div id="current-score">
+      <h1>Clear the Dungeon</h1>
+      <h3>Health</h3>
+      <div id="score">0</div>
+    </div>
+    <div id="ez-change">
+      <button class="ez-button num-button" id="ez-p">+1</button>
+      <button class="ez-button num-button" id="ez-m">-1</button>
+    </div>
+    <div id="num-change">
+      <input id="num-in" type="text" inputmode="numeric" pattern="\d*" />
+     <p> Use the number pad below or the numbers on your keyboard to enter an amount your starting points.<br>
+Press the plus or minus buttons below, or the corresponding keys on your keyboard, to adjust your score.  </p>
+      <b>Max Health:</b> <input id="max-health" type="text" inputmode="numeric" pattern="\d*" value="20">
+    </div>
+    <div id="num-pad">
+      <div id="numbers">
+        <button class="num-button" id="b-1">1</button>
+        <button class="num-button" id="b-2">2</button>
+        <button class="num-button" id="b-3">3</button>
+        <button class="num-button" id="b-4">4</button>
+        <button class="num-button" id="b-5">5</button>
+        <button class="num-button" id="b-6">6</button>
+        <button class="num-button" id="b-7">7</button>
+        <button class="num-button" id="b-8">8</button>
+        <button class="num-button" id="b-9">9</button>
+        <button class="num-button" id="b-p">+</button>
+        <button class="num-button" id="b-0">0</button>
+        <button class="num-button" id="b-m">-</button>
+      </div>
+      <button class="num-button" id="b-clear">Clear Input</button>
+      <button class="num-button" id="b-reset">Reset Health</button>
+    </div>
+  </div>
+  <div id="history">
+  </div>
+</div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
